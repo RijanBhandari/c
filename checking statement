@@ -1,0 +1,37 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+    int a,b,result;
+    char choice;
+    printf("Give a and b");
+    scanf("%d%d",&a,&b);
+    printf("%c",&choice);
+    switch(choice)
+    {
+        case'+':
+            result = a + b;
+            printf("a+b:%d",result);
+            break;
+        case'-':
+            result = a - b;
+            printf("a-b:%d",result);
+            break;
+        case'*':
+            result = a * b;
+            printf("a*b:%d",result);
+            break;
+        case'/':
+            result = a / b;
+            printf("a/b:%d",result);
+            break;
+        case'/':
+            result = a / b;
+            printf("a/b:%d",result);
+            break;
+        defult:
+            printf("Give +,-,*,/ or %");
+    }
+    getch();
+    
+}
