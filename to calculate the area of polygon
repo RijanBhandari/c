@@ -1,0 +1,46 @@
+#include<stdio.h>
+#include<conio.h>
+#include<math.h>
+#define pi 3.14
+void main()
+{
+    int r,s,l,br,a,b,c,circum,area,choice;
+    printf("Give 1 to calculate circle\n2to calculate rectangle\n3to calculate square\n4 to calculate triangle\n");
+    scanf(" %d",&choice);
+    switch(choice)
+    {
+        case 1:
+        	printf("give radius");
+        	scanf("%d",&r);
+            area = pi*r*r;
+            circum = 2*pi*r;
+            printf("the area of circle is %d and circumference is %d ",area,circum);
+            break;
+        case 2:
+        	printf("give length and breadth");
+        	scanf("%d%d",&l,&br);
+            area = l * br;
+            circum = l + br ;
+            printf("the area of rectangle is %d and perimeter is %d ",area,circum);
+            break;
+        case 3:
+            printf("give length of square");
+        	scanf("%d",&l);
+            area = l * l;
+            circum = 2*l  ;
+            printf("the area of square is %d and perimeter is %d ",area,circum);
+            break;
+        case 4:
+            printf("give side of triangle a,b,c");
+        	scanf("%d%d%d",&a,&b,&c);
+        	s = (a+b+c)/2;
+            area = sqrt(s*(s-a)*(s-b)*(s-c));
+            circum = a+b+c  ;
+            printf("the area of triangle is %d and perimeter is %d ",area,circum);
+            break;
+        defult:
+            printf("Please try again");
+    }
+    getch();
+
+}
