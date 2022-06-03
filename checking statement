@@ -6,7 +6,8 @@ void main()
     char choice;
     printf("Give a and b");
     scanf("%d%d",&a,&b);
-    printf("%c",&choice);
+    printf("character:  ");
+    scanf(" %c",&choice);
     switch(choice)
     {
         case'+':
@@ -25,13 +26,13 @@ void main()
             result = a / b;
             printf("a/b:%d",result);
             break;
-        case'/':
+        case'%':
             result = a / b;
-            printf("a/b:%d",result);
+            printf("a%b:%d",result);
             break;
         defult:
             printf("Give +,-,*,/ or %");
     }
     getch();
-    
+
 }
