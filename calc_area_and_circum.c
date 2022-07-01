@@ -1,3 +1,4 @@
+//calculate the area and circumference using pass by reference.
 #include<stdio.h>
 void calc(int,float*,float*);
 #define pi 3.14
