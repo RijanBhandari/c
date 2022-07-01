@@ -1,3 +1,4 @@
+// program to enter three decimal point number and display the lowest.
 #include<stdio.h>
 float smaller(float,float,float);
 void main(){
